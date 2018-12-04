@@ -6,9 +6,7 @@
 
 ### Information:  
 
-Image with pandoc for gitlab-ci.  
-
-For the GitLab of the federal state Rhineland-Palatinate in Germany.  
+Image with Pandoc for GitLab (gitlab-ci) of Rhineland-Palatinate in Germany.  
 
 ### How to use this image (example)
 
