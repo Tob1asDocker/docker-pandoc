@@ -1,4 +1,3 @@
-# Pull image
 FROM debian:stretch
 
 LABEL maintainer="Tobias Hargesheimer <docker@ison.ws>" \
@@ -7,7 +6,8 @@ LABEL maintainer="Tobias Hargesheimer <docker@ison.ws>" \
 ENV LANG C.UTF-8
 ENV TERM=xterm
 
-RUN echo -e 'deb http://ftp.uni-mainz.de/debian stretch main\ndeb http://ftp.uni-mainz.de/debian-security stretch/updates main\ndeb http://ftp.uni-mainz.de/debian stretch-updates main' > /etc/apt/sources.list \
+RUN set -x \
+	&& /bin/bash -c 'echo -e "deb http://ftp.uni-mainz.de/debian stretch main\ndeb http://ftp.uni-mainz.de/debian-security stretch/updates main\ndeb http://ftp.uni-mainz.de/debian stretch-updates main" > /etc/apt/sources.list' \
 	&& apt-get update -qq \
 	&& apt-get install -y -qq texlive texlive-latex-extra texlive-xetex make latexmk pandoc \
 	#--no-install-recommends \
