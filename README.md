@@ -13,7 +13,7 @@ Image with Pandoc for GitLab (gitlab-ci) of Rhineland-Palatinate in Germany.
 File ```.gitlab-ci.yml``` :  
 
 ```yml
-image: tobi312/pandoc:latest
+image: tobi312/pandoc:stable
 
 build:
   script:
