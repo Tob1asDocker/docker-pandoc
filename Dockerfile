@@ -9,7 +9,7 @@ ENV TERM=xterm
 RUN set -x \
 	&& /bin/bash -c 'echo -e "deb http://ftp.uni-mainz.de/debian stretch main\ndeb http://ftp.uni-mainz.de/debian-security stretch/updates main\ndeb http://ftp.uni-mainz.de/debian stretch-updates main" > /etc/apt/sources.list' \
 	&& apt-get update -qq \
-	&& apt-get install -y -qq texlive texlive-latex-extra texlive-xetex make latexmk wget curl \
+	&& apt-get install -y -qq texlive texlive-latex-extra texlive-xetex texlive-luatex texlive-lang-english texlive-lang-german make latexmk wget curl \
 	#--no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& PANDOC_VERSION=$(curl -s https://api.github.com/repos/jgm/pandoc/tags  | grep 'name'  | cut -d\" -f4 | egrep -v [a-zA-Z] | head -n1) \
