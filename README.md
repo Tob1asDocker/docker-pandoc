@@ -1,11 +1,20 @@
-# pandoc
-Image with pandoc for gitlab-ci
+# pandoc on x86_64  
 
-For the GitLab of the federal state Rhineland-Palatinate in Germany.
+### Supported tags and respective `Dockerfile` links
+-	[`latest` (*Dockerfile*)](https://github.com/Tob1asDocker/docker-pandoc/blob/master/Dockerfile)
+-	[`stable` (*Dockerfile*)](https://github.com/Tob1asDocker/docker-pandoc/blob/master/Dockerfile-stable)
 
-```.gitlab-ci.yml``` :
+### Information:  
 
-```
+Image with pandoc for gitlab-ci.  
+
+For the GitLab of the federal state Rhineland-Palatinate in Germany.  
+
+### How to use this image (example)
+
+File ```.gitlab-ci.yml``` :  
+
+```yml
 image: tobi312/pandoc:latest
 
 build:
@@ -22,3 +31,7 @@ build:
     - tags
 
 ```
+
+### This Image on  
+* [DockerHub](https://hub.docker.com/r/tobi312/pandoc/)
+* [GitHub](https://github.com/Tob1asDocker/docker-pandoc)
