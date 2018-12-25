@@ -6,7 +6,7 @@
 
 ### Information:  
 
-Image with Pandoc for GitLab (gitlab-ci) of Rhineland-Palatinate in Germany.  
+Image for GitLab (gitlab-ci) of Rhineland-Palatinate in Germany.  
 
 This image contains the following applications:  
 * [TeX Live](https://www.tug.org/texlive/)  
