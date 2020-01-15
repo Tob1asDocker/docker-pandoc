@@ -1,5 +1,16 @@
 # pandoc on x86_64  
 
+### NOT MAINTAINED AND DEPRECATED
+
+This image is not maintained and is deprecated!  
+  
+Please use the following images:
+
+* [pandoc/latex](https://hub.docker.com/r/pandoc/latex)
+* [dalibo/pandocker](https://hub.docker.com/r/dalibo/pandocker)
+
+--- 
+
 ### Supported tags and respective `Dockerfile` links
 -	[`latest` (*Dockerfile*)](https://github.com/Tob1asDocker/docker-pandoc/blob/master/Dockerfile)
 -	[`stable` (*Dockerfile*)](https://github.com/Tob1asDocker/docker-pandoc/blob/master/Dockerfile-stable)
